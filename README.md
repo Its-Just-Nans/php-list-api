@@ -18,3 +18,44 @@ bash build.sh
 ```
 
 Then go to `localhost:8080`
+
+
+## Examples
+
+### `http://localhost:8080/expose/`
+
+```json
+[
+    {
+        "name": "file.txt",
+        "path": "file.txt",
+        "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0,
+        "url": "",
+        "html_url": "-",
+        "git_url": "-",
+        "download_url": "-",
+        "type": "file"
+    },
+    {
+        "name": "folder",
+        "path": "folder/",
+        "sha": "0",
+        "size": 0,
+        "url": "",
+        "html_url": "-",
+        "git_url": "-",
+        "download_url": "-",
+        "type": "dir"
+    }
+]
+```
+
+### `http://localhost:8080/expose/file`
+
+```json
+{
+    "message": "Not Found",
+    "documentation_url": "no"
+}
+```
