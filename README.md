@@ -4,6 +4,19 @@
 
 I wanted to have a clone of the GitHub API, in PHP (it can be used on simple host server which use PHP)
 
+## Two mode
+
+Two folder for two mode :
+
+- `rewrite_mode/` : if you **can** use to the `RewriteEngine` and the `RewriteRule`
+- `no_rewrite_mode/` : if you **can't** use to the `RewriteEngine` and the `RewriteRule`
+
+> Note that you need to have your PHP version higher than version `php56`
+>
+> You can use the file `.htaccess.temp` to force use the version 5.6 (if installed)
+
+For the `no_rewrite_mode/` we use-bug php with the `ErrorDocument` directive, so you request will be in 404 BUT there will be data !
+
 ## Variable to change
 
 - the link in `.htaccess`

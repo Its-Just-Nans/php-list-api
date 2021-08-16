@@ -1,6 +1,7 @@
 <?php
 $GLOBALS['path'] ="expose/";
 
+header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json');
 function createEntity($oneName, $filePath) {
     $isDir = is_dir($filePath);
